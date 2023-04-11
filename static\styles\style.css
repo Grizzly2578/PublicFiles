@@ -1,0 +1,36 @@
+*{
+  background-color: black;
+
+}
+#ligma{
+  text-align: center;
+  font-style: italic;
+  color: wheat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#file{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: wheat;
+  color: black;
+  border: 2px solid white;
+}
+#submit{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: wheat;
+  color: black;
+  border: 2px solid white;
+}
+#files {
+  text-align: left;
+}
+.folders {
+    font-size: 50px;
+    color: wheat;
+    text-decoration:  none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+.upload_buttons {
+  align-items: center;
+}
