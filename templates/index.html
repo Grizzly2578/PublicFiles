@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    </head>
+    <body>
+        <h1 id="ligma">Ligma</h1>
+        <ul id="files">
+            {% for file in files %}
+            <br>
+                <a href="{{ (request.path + '/' if request.path != '/' else '') + file }}" class="folders">
+                    {{ file }}
+                </a>
+            {% endfor %}
+            <br>
+                <a href="music" class="folders">
+                    Music
+                </a>
+            <br>
+                <a href="videos" class="folders">
+                    Vidoes
+                </a>
+        </ul>
+        <form method='POST', enctype="multipart/form-data", id="upload_buttons">
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            {{form.submit()}}
+        </form>
+    </body>
+</html>
